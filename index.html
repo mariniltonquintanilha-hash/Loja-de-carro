@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoElite | Concessionária Premium</title>
+    
+    <!-- Fontes (Google Fonts) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- NAVEGAÇÃO -->
+    <header>
+        <div class="container navbar" id="navbar">
+            <div class="logo">AUTO<span>ELITE</span></div>
+            <div class="mobile-toggle" onclick="toggleMobileMenu()">☰</div>
+            <ul class="nav-menu">
+                <li><a class="nav-link active" onclick="showPage('home')">Home</a></li>
+                <li><a class="nav-link" onclick="showPage('catalog')">Catálogo</a></li>
+                <li><a class="nav-link" onclick="showPage('financing')">Financiamento</a></li>
+                <li><a class="nav-link" onclick="showPage('about')">Sobre</a></li>
+                <li><a class="nav-link" onclick="showPage('testimonials')">Depoimentos</a></li>
+                <li><a class="cta-btn-nav" onclick="showPage('contact')">Contato</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- PÁGINAS (SEÇÕES) -->
+    
+    <!-- 1. HOME -->
+    <div id="home" class="page-section fade-in">
+        <!-- 1. Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <span class="section-subtitle" style="color: var(--secondary); margin-bottom: 20px;">Concessionária Premium</span>
+                <h1>Encontre o Carro <span>dos Seus Sonhos</span></h1>
+                <p>Mais de 500 veículos seminovos e zero km das melhores marcas. Financiamento facilitado e garantia de qualidade.</p>
+                <div>
+                    <button class="btn btn-primary" onclick="showPage('catalog')">Ver Catálogo</button>
+                    <button class="btn btn-outline" style="border-color: white; color: white;" onclick="showPage('financing')">Simular Financiamento</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Destaques -->
+        <section class="section-padding featured-section">
+            <div class="container">
+                <div class="text-center">
+                    <span class="section-subtitle">Destaques</span>
+                    <h2 class="section-title">Veículos em Destaque</h2>
+                    <p style="margin-bottom: 50px; color: var(--gray); max-width: 700px; margin-left: auto; margin-right: auto;">Seleção especial de carros com as melhores condições do mercado.</p>
+                </div>
+                <div class="featured-grid">
+                    <div class="card car-card">
+                        <div class="car-img-container">
+                            <img src="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?q=80&w=1974&auto=format&fit=crop" class="car-img" alt="Audi Q5">
+                            <div class="car-badge">Semi-novo</div>
+                        </div>
+                        <div class="car-content">
+                            <h3 class="car-title">Audi Q5 2022</h3>
+                            <div class="car-specs">
+                                <span><i class="fas fa-gas-pump"></i> Gasolina</span>
+                                <span><i class="fas fa-cogs"></i> Automático</span>
+                                <span><i class="fas fa-road"></i> 15.000 km</span>
+                            </div>
+                            <div class="car-price">R$ 289.900<span> à vista</span></div>
+                            <button class="btn btn-primary" style="width: 100%;" onclick="showPage('contact')">Solicitar Detalhes</button>
+                        </div>
+                    </div>
+                    
+                    <div class="card car-card">
+                        <div class="car-img-container">
+                            <img src="https://images.unsplash.com/photo-1553440569-bcc63803a83d?q=80&w=2025&auto=format&fit=crop" class="car-img" alt="BMW X3">
+                            <div class="car-badge" style="background: var(--success);">Zero KM</div>
+                        </div>
+                        <div class="car-content">
+                            <h3 class="car-title">BMW X3 2024</h3>
+                            <div class="car-specs">
+                                <span><i class="fas fa-gas-pump"></i> Flex</span>
+                                <span><i class="fas fa-cogs"></i> Automático</span>
+                                <span><i class="fas fa-road"></i> 0 km</span>
+                            </div>
+                            <div class="car-price">R$ 389.900<span> à vista</span></div>
+                            <button class="btn btn-primary" style="width: 100%;" onclick="showPage('contact')">Solicitar Detalhes</button>
+                        </div>
+                    </div>
+                    
+                    <div class="card car-card">
+                        <div class="car-img-container">
+                            <img src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?q=80&w=1974&auto=format&fit=crop" class="car-img" alt="Jeep Compass">
+                            <div class="car-badge">Semi-novo</div>
+                        </div>
+                        <div class="car-content">
+                            <h3 class="car-title">Jeep Compass 2023</h3>
+                            <div class="car-specs">
+                                <span><i class="fas fa-gas-pump"></i> Diesel</span>
+                                <span><i class="fas fa-cogs"></i> Automático</span>
+                                <span><i class="fas fa-road"></i> 8.000 km</span>
+                            </div>
+                            <div class="car-price">R$ 189.900<span> à vista</span></div>
+                            <button class="btn btn-primary" style="width: 100%;" onclick="showPage('contact')">Solicitar Detalhes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Por que comprar na AutoElite -->
+        <section class="section-padding why-section">
+            <div class="container">
+                <div class="text-center">
+                    <span class="section-subtitle">Por que nos escolher</span>
+                    <h2 class="section-title">Vantagens AutoElite</h2>
+                    <p style="margin-bottom: 50px; color: var(--gray); max-width: 700px; margin-left: auto; margin-right: auto;">Oferecemos uma experiência diferenciada na compra do seu veículo.</p>
+                </div>
+                <div class="why-container">
+                    <div class="card why-card">
+                        <div class="why-icon"><i class="fas fa-shield-alt"></i></div>
+                        <h3 class="why-title">Garantia Total</h3>
+                        <p style="color: var(--gray);">Todos os veículos possuem garantia de 12 meses, mesmo os seminovos.</p>
+                    </div>
+                    <div class="card why-card">
+                        <div class="why-icon"><i class="fas fa-search"></i></div>
+                        <h3 class="why-title">Inspeção 150 Pontos</h3>
+                        <p style="color: var(--gray);">Cada carro passa por rigorosa inspeção antes de entrar em nosso estoque.</p>
+                    </div>
+                    <div class="card why-card">
+                        <div class="why-icon"><i class="fas fa-handshake"></i></div>
+                        <h3 class="why-title">Financiamento Facilitado</h3>
+                        <p style="color: var(--gray);">Parcelamento em até 60x com taxas especiais para clientes AutoElite.</p>
+                    </div>
+                    <div class="card why-card">
+                        <div class="why-icon"><i class="fas fa-exchange-alt"></i></div>
+                        <h3 class="why-title">Aceitamos Seu Carro</h3>
+                        <p style="color: var(--gray);">Avaliação justa do seu usado como parte do pagamento.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Financiamento -->
+        <section class="financing-section">
+            <div class="container">
+                <div class="financing-container">
+                    <div class="financing-content">
+                        <span class="section-subtitle" style="color: var(--accent);">Condições especiais</span>
+                        <h2 class="financing-title">Financiamento sob Medida</h2>
+                        <p style="margin-bottom: 25px; color: rgba(255,255,255,0.9);">Oferecemos as melhores condições do mercado com parcelas que cabem no seu bolso.</p>
+                        <ul class="financing-list">
+                            <li><i class="fas fa-check-circle"></i> Taxas a partir de 0,99% ao mês</li>
+                            <li><i class="fas fa-check-circle"></i> Parcelamento em até 60 meses</li>
+                            <li><i class="fas fa-check-circle"></i> Entrada facilitada com seu carro usado</li>
+                            <li><i class="fas fa-check-circle"></i> Aprovação em até 24 horas</li>
+                        </ul>
+                        <button class="btn btn-light" onclick="showPage('financing')">Simular Agora</button>
+                    </div>
+                    <div>
+                        <div style="background: rgba(255,255,255,0.1); padding: 40px; border-radius: 8px; backdrop-filter: blur(10px);">
+                            <h3 style="color: white; margin-bottom: 20px;">Exemplo de Financiamento</h3>
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 25px;">
+                                <div style="background: rgba(255,255,255,0.15); padding: 15px; border-radius: 4px;">
+                                    <div style="font-size: 12px; color: rgba(255,255,255,0.8);">Valor do Veículo</div>
+                                    <div style="font-size: 22px; font-weight: 700; color: white;">R$ 150.000</div>
+                                </div>
+                                <div style="background: rgba(255,255,255,0.15); padding: 15px; border-radius: 4px;">
+                                    <div style="font-size: 12px; color: rgba(255,255,255,0.8);">Parcela Mensal</div>
+                                    <div style="font-size: 22px; font-weight: 700; color: white;">R$ 2.450</div>
+                                </div>
+                            </div>
+                            <div style="font-size: 14px; color: rgba(255,255,255,0.8);">
+                                <i class="fas fa-info-circle" style="color: var(--accent);"></i> Exemplo para 60 meses com 20% de entrada
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Marcas Trabalhadas -->
+        <section class="section-padding brands-section">
+            <div class="container">
+                <div class="text-center">
+                    <span class="section-subtitle">Parcerias</span>
+                    <h2 class="section-title">Marcas que Trabalhamos</h2>
+                    <p style="margin-bottom: 50px; color: var(--gray); max-width: 700px; margin-left: auto; margin-right: auto;">Concessionária autorizada das principais marcas do mercado.</p>
+                </div>
+                <div class="brands-grid">
+                    <div class="brand-logo">
+                        <!-- Logos fictícias -->
+                        <div style="font-family: 'Montserrat', sans-serif; font-weight: 700; color: var(--primary);">BMW</div>
+                    </div>
+                    <div class="brand-logo">
+                        <div style="font-family: 'Montserrat', sans-serif; font-weight: 700; color: var(--primary);">AUDI</div>
+                    </div>
+                    <div class="brand-logo">
+                        <div style="font-family: 'Montserrat', sans-serif; font-weight: 700; color: var(--primary);">MERCEDES</div>
+                    </div>
+                    <div class="brand-logo">
+                        <div style="font-family: 'Montserrat', sans-serif; font-weight: 700; color: var(--primary);">VOLVO</div>
+                    </div>
+                    <div class="brand-logo">
+                        <div style="font-family: 'Montserrat', sans-serif; font-weight: 700; color: var(--primary);">JEEP</div>
+                    </div>
+                    <div class="brand-logo">
+                        <div style="font-family: 'Montserrat', sans-serif; font-weight: 700; color: var(--primary);">VOLKSWAGEN</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. CTA Final -->
+        <section class="final-cta">
+            <div class="container">
+                <h2>Pronto para Dirigir o Carro dos Seus Sonhos?</h2>
+                <p>Agende um test drive sem compromisso e experimente a sensação de dirigir um veículo de qualidade.</p>
+                <button class="btn btn-light" onclick="showPage('contact')">Agendar Test Drive</button>
+            </div>
+        </section>
+    </div>
+
+    <!-- 2. CATÁLOGO -->
+    <div id="catalog" class="page-section hidden fade-in">
+        <section class="section-padding catalog-section">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <span class="section-subtitle">Nossa frota</span>
+                    <h2 class="section-title">Catálogo de Veículos</h2>
+                    <p style="margin-bottom: 50px; color: var(--gray); max-width: 700px; margin-left: auto; margin-right: auto;">Explore nossa seleção de carros novos e seminovos com as melhores condições.</p>
+                </div>
+
+                <!-- Filtros -->
+                <div class="catalog-filters">
+                    <div class="filter-group">
+                        <label>Marca</label>
+                        <select class="filter-select">
+                            <option>Todas as Marcas</option>
+                            <option>BMW</option>
+                            <option>Audi</option>
+                            <option>Mercedes</option>
+                            <option>Jeep</option>
+                            <option>Volvo</option>
+                            <option>Volkswagen</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>Modelo</label>
+                        <select class="filter-select">
+                            <option>Todos os Modelos</option>
+                            <option>SUV</option>
+                            <option>Sedan</option>
+                            <option>Hatch</option>
+                            <option>Pickup</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>Ano</label>
+                        <select class="filter-select">
+                            <option>Todos os Anos</option>
+                            <option>2024</option>
+                            <option>2023</option>
+                            <option>2022</option>
+                            <option>2021</option>
+                            <option>2020</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>Preço</label>
+                        <select class="filter-select">
+                            <option>Todas as Faixas</option>
+                            <option>Até R$ 100.000</option>
+                            <option>R$ 100.000 - R$ 200.000</option>
+                            <option>R$ 200.000 - R$ 300.000</option>
+                            <option>Acima de R$ 300.000</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Listagem de Carros -->
+                <div class="catalog-grid">
+                    <div class="card catalog-car-card">
+                        <div class="car-status">Novo</div>
+                        <div class="car-img-container">
+                            <img src="https://images.unsplash.com/photo-1553440569-bcc63803a83d?q=80&w=2025&auto=format&fit=crop" class="car-img" alt="BMW X3">
+                        </div>
+                        <div class="car-details">
+                            <h3 class="car-title">BMW X3 2024</h3>
+                            <div class="car-meta">
+                                <span>SUV • Gasolina • Automático</span>
+                                <span>0 km</span>
+                            </div>
+                            <div class="car-price">R$ 389.900</div>
+                            <button class="btn btn-primary" style="width: 100%; margin-top: 15px;" onclick="showPage('contact')">Mais Detalhes</button>
+                        </div>
+                    </div>
+                    
+                    <div class="card catalog-car-card">
+                        <div class="car-status used">Semi-novo</div>
+                        <div class="car-img-container">
+                            <img src="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?q=80&w=1974&auto=format&fit=crop" class="car-img" alt="Audi Q5">
+                        </div>
+                        <div class="car-details">
+                            <h3 class="car-title">Audi Q5 2022</h3>
+                            <div class="car-meta">
+                                <span>SUV • Gasolina • Automático</span>
+                                <span>15.000 km</span>
+                            </div>
+                            <div class="car-price">R$ 289.900</div>
+                            <button class="btn btn-primary" style="width: 100%; margin-top: 15px;" onclick="showPage('contact')">Mais Detalhes</button>
+                        </div>
+                    </div>
+                    
+                    <div class="card catalog-car-card">
+                        <div class="car-status used">Semi-novo</div>
+                        <div class="car-img-container">
+                            <img src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?q=80&w=1974&auto=format&fit=crop" class="car-img" alt="Jeep Compass">
+                        </div>
+                        <div class="car-details">
+                            <h3 class="car-title">Jeep Compass 2023</h3>
+                            <div class="car-meta">
+                                <span>SUV • Diesel • Automático</span>
+                                <span>8.000 km</span>
+                            </div>
+                            <div class="car-price">R$ 189.900</div>
+                            <button class="btn btn-primary" style="width: 100%; margin-top: 15px;" onclick="showPage('contact')">Mais Detalhes</button>
+                        </div>
+                    </div>
+                    
+                    <div class="card catalog-car-card">
+                        <div class="car-status">Novo</div>
+                        <div class="car-img-container">
+                            <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?q=80&w=1964&auto=format&fit=crop" class="car-img" alt="Volvo XC60">
+                        </div>
+                        <div class="car-details">
+                            <h3 class="car-title">Volvo XC60 2024</h3>
+                            <div class="car-meta">
+                                <span>SUV • Híbrido • Automático</span>
+                                <span>0 km</span>
+                            </div>
+                            <div class="car-price">R$ 349.900</div>
+                            <button class="btn btn-primary" style="width: 100%; margin-top: 15px;" onclick="showPage('contact')">Mais Detalhes</button>
+                        </div>
+                    </div>
+                    
+                    <div class="card catalog-car-card">
+                        <div class="car-status used">Semi-novo</div>
+                        <div class="car-img-container">
+                            <img src="https://images.unsplash.com/photo-1555212697-194d092e3b8f?q=80&w=1974&auto=format&fit=crop" class="car-img" alt="Mercedes Classe C">
+                        </div>
+                        <div class="car-details">
+                            <h3 class="car-title">Mercedes Classe C 2022</h3>
+                            <div class="car-meta">
+                                <span>Sedan • Gasolina • Automático</span>
+                                <span>22.000 km</span>
+                            </div>
+                            <div class="car-price">R$ 279.900</div>
+                            <button class="btn btn-primary" style="width: 100%; margin-top: 15px;" onclick="showPage('contact')">Mais Detalhes</button>
+                        </div>
+                    </div>
+                    
+                    <div class="card catalog-car-card">
+                        <div class="car-status used">Semi-novo</div>
+                        <div class="car-img-container">
+                            <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?q=80&w=2070&auto=format&fit=crop" class="car-img" alt="VW Tiguan">
+                        </div>
+                        <div class="car-details">
+                            <h3 class="car-title">VW Tiguan 2023</h3>
+                            <div class="car-meta">
+                                <span>SUV • Flex • Automático</span>
+                                <span>12.500 km</span>
+                            </div>
+                            <div class="car-price">R$ 169.900</div>
+                            <button class="btn btn-primary" style="width: 100%; margin-top: 15px;" onclick="showPage('contact')">Mais Detalhes</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-5">
+                    <button class="btn btn-primary" onclick="showPage('contact')">Não encontrou o que procura? Fale conosco</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- 3. FINANCIAMENTO -->
+    <div id="financing" class="page-section hidden fade-in">
+        <section class="section-padding financing-detail-section">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <span class="section-subtitle">Condições especiais</span>
+                    <h2 class="section-title">Opções de Financiamento</h2>
+                    <p style="margin-bottom: 50px; color: var(--gray); max-width: 700px; margin-left: auto; margin-right: auto;">Escolha a melhor forma de financiar seu veículo com nossas condições exclusivas.</p>
+                </div>
+
+                <div class="financing-options">
+                    <div class="card option-card">
+                        <div class="value-icon"><i class="fas fa-car"></i></div>
+                        <h3 style="color: var(--primary); margin-bottom: 10px;">Financiamento Tradicional</h3>
+                        <p style="color: var(--gray); margin-bottom: 20px;">Financiamento direto com as melhores taxas do mercado.</p>
+                        <div class="option-price">0,99%<span style="font-size: 16px;">/mês</span></div>
+                        <ul class="option-details">
+                            <li>Entrada a partir de 20%</li>
+                            <li>Parcelamento em até 60 meses</li>
+                            <li>Seguro incluído</li>
+                            <li>Documentação sem burocracia</li>
+                        </ul>
+                        <button class="btn btn-outline" style="width: 100%;" onclick="showPage('contact')">Solicitar Simulação</button>
+                    </div>
+                    
+                    <div class="card option-card featured">
+                        <div class="featured-badge">Mais Popular</div>
+                        <div class="value-icon"><i class="fas fa-exchange-alt"></i></div>
+                        <h3 style="color: var(--primary); margin-bottom: 10px;">Troca Facilitada</h3>
+                        <p style="color: var(--gray); margin-bottom: 20px;">Use seu carro atual como entrada e pague menos.</p>
+                        <div class="option-price">0,79%<span style="font-size: 16px;">/mês</span></div>
+                        <ul class="option-details">
+                            <li>Avaliação justa do seu usado</li>
+                            <li>Taxas reduzidas para troca</li>
+                            <li>Documentação gratuita</li>
+                            <li>Garantia estendida</li>
+                            <li>Seguro com desconto</li>
+                        </ul>
+                        <button class="btn btn-primary" style="width: 100%;" onclick="showPage('contact')">Solicitar Simulação</button>
+                    </div>
+                    
+                    <div class="card option-card">
+                        <div class="value-icon"><i class="fas fa-building"></i></div>
+                        <h3 style="color: var(--primary); margin-bottom: 10px;">Consórcio</h3>
+                        <p style="color: var(--gray); margin-bottom: 20px;">Adquira seu veículo através de consórcio com parcelas fixas.</p>
+                        <div class="option-price">Sem Juros</div>
+                        <ul class="option-details">
+                            <li>Parcelas fixas sem correção</li>
+                            <li>Possibilidade de lance</li>
+                            <li>Sem entrada obrigatória</li>
+                            <li>Crédito 100% do veículo</li>
+                        </ul>
+                        <button class="btn btn-outline" style="width: 100%;" onclick="showPage('contact')">Solicitar Simulação</button>
+                    </div>
+                </div>
+
+                <!-- Calculadora de Financiamento -->
+                <div class="card" style="margin-top: 60px; padding: 40px;">
+                    <h3 style="color: var(--primary); margin-bottom: 25px; text-align: center;">Simulador de Financiamento</h3>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px;">
+                        <div>
+                            <div class="form-group">
+                                <label>Valor do Veículo (R$)</label>
+                                <input type="number" class="form-control" value="150000" id="vehicleValue">
+                            </div>
+                            <div class="form-group">
+                                <label>Entrada (R$)</label>
+                                <input type="number" class="form-control" value="30000" id="downPayment">
+                            </div>
+                            <div class="form-group">
+                                <label>Prazo (meses)</label>
+                                <select class="form-control" id="term">
+                                    <option value="36">36 meses</option>
+                                    <option value="48" selected>48 meses</option>
+                                    <option value="60">60 meses</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div>
+                            <div style="background: var(--light); padding: 30px; border-radius: 8px; text-align: center;">
+                                <div style="font-size: 14px; color: var(--gray); margin-bottom: 10px;">Valor Financiado</div>
+                                <div id="financedAmount" style="font-size: 28px; font-weight: 700; color: var(--primary); margin-bottom: 25px;">R$ 120.000</div>
+                                
+                                <div style="font-size: 14px; color: var(--gray); margin-bottom: 10px;">Parcela Mensal</div>
+                                <div id="monthlyPayment" style="font-size: 36px; font-weight: 700; color: var(--secondary); margin-bottom: 10px;">R$ 2.450</div>
+                                <div style="font-size: 12px; color: var(--gray);">*Taxa de 0,99% ao mês</div>
+                                
+                                <button class="btn btn-primary" style="width: 100%; margin-top: 25px;" onclick="showPage('contact')">Solicitar Financiamento</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- 4. SOBRE -->
+    <div id="about" class="page-section hidden fade-in">
+        <section class="about-hero">
+            <div class="container">
+                <h1 style="font-size: 48px; margin-bottom: 20px;">Nossa História e Valores</h1>
+                <p style="font-size: 18px; max-width: 700px; margin-left: auto; margin-right: auto; opacity: 0.9;">Há mais de 15 anos oferecendo os melhores veículos com transparência e qualidade.</p>
+            </div>
+        </section>
+
+        <section class="section-padding about-section">
+            <div class="container">
+                <div class="about-content">
+                    <h2 class="section-title" style="text-align: center;">Quem Somos</h2>
+                    <p style="color: var(--gray); margin-bottom: 30px; font-size: 17px; line-height: 1.7;">
+                        A AutoElite foi fundada em 2009 com a missão de revolucionar o mercado de veículos premium no Brasil. 
+                        Começamos como uma pequena loja de carros seminovos e, através de muito trabalho e compromisso com a qualidade, 
+                        nos tornamos uma das principais concessionárias de veículos premium do país.
+                    </p>
+                    <p style="color: var(--gray); margin-bottom: 40px; font-size: 17px; line-height: 1.7;">
+                        Nossa filosofia é simples: oferecer aos nossos clientes não apenas um carro, mas uma experiência completa de compra. 
+                        Desde o primeiro contato até o pós-venda, nos dedicamos a superar expectativas através de um atendimento personalizado, 
+                        veículos de qualidade comprovada e condições financeiras que realmente fazem sentido.
+                    </p>
+                    
+                    <div style="background: rgba(13, 59, 102, 0.05); padding: 40px; border-radius: 8px; margin-bottom: 50px; border-left: 4px solid var(--secondary);">
+                        <h3 style="color: var(--primary); margin-bottom: 20px; font-size: 24px;">Nosso Compromisso</h3>
+                        <p style="color: var(--gray); font-size: 17px; line-height: 1.7;">
+                            <i>"Acreditamos que comprar um carro deve ser uma experiência positiva, sem surpresas ou preocupações. 
+                            Por isso, cada veículo que sai da AutoElite passa por uma rigorosa inspeção de 150 itens e oferecemos garantia total, 
+                            porque nossa prioridade é a sua satisfação e segurança."</i>
+                            <br><br>
+                            <strong>- Carlos Mendes, Fundador</strong>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="text-center mt-5">
+                    <h3 class="section-title">Nossos Valores</h3>
+                </div>
+                <div class="about-values">
+                    <div class="card value-card">
+                        <div class="value-icon"><i class="fas fa-medal"></i></div>
+                        <h3 style="color: var(--primary); margin-bottom: 15px;">Qualidade</h3>
+                        <p style="color: var(--gray);">Veículos inspecionados e com garantia de procedência.</p>
+                    </div>
+                    <div class="card value-card">
+                        <div class="value-icon"><i class="fas fa-handshake"></i></div>
+                        <h3 style="color: var(--primary); margin-bottom: 15px;">Transparência</h3>
+                        <p style="color: var(--gray);">Orçamentos detalhados sem custos ocultos ou surpresas.</p>
+                    </div>
+                    <div class="card value-card">
+                        <div class="value-icon"><i class="fas fa-headset"></i></div>
+                        <h3 style="color: var(--primary); margin-bottom: 15px;">Atendimento</h3>
+                        <p style="color: var(--gray);">Equipe especializada e comprometida com sua satisfação.</p>
+                    </div>
+                    <div class="card value-card">
+                        <div class="value-icon"><i class="fas fa-shield-alt"></i></div>
+                        <h3 style="color: var(--primary); margin-bottom: 15px;">Segurança</h3>
+                        <p style="color: var(--gray);">Garantia em todos os veículos e pós-venda dedicado.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- 5. DEPOIMENTOS -->
+    <div id="testimonials" class="page-section hidden fade-in">
+        <section class="section-padding">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <span class="section-subtitle">O que dizem nossos clientes</span>
+                    <h2 class="section-title">Depoimentos</h2>
+                    <p style="margin-bottom: 50px; color: var(--gray); max-width: 700px; margin-left: auto; margin-right: auto;">A satisfação dos nossos clientes é a nossa maior recompensa.</p>
+                </div>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 30px; margin-top: 50px;">
+                    <div class="card" style="padding: 40px; border-left: 4px solid var(--secondary);">
+                        <div class="stars" style="color: var(--accent); margin-bottom: 15px; font-size: 18px;">★★★★★</div>
+                        <p style="font-size: 16px; font-style: italic; margin-bottom: 20px; color: #555; line-height: 1.7;">
+                            "Comprei meu primeiro carro premium na AutoElite e a experiência foi incrível. O atendimento foi personalizado, 
+                            o financiamento saiu com taxas melhores que as que eu encontrava por aí, e o carro estava em perfeito estado. Recomendo!"
+                        </p>
+                        <div style="display: flex; align-items: center; gap: 15px;">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover;">
+                            <div>
+                                <strong>Roberto Santos</strong><br>
+                                <span style="font-size: 12px; color: #999;">Comprou um BMW X3 2023</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card" style="padding: 40px; border-left: 4px solid var(--secondary);">
+                        <div class="stars" style="color: var(--accent); margin-bottom: 15px; font-size: 18px;">★★★★★</div>
+                        <p style="font-size: 16px; font-style: italic; margin-bottom: 20px; color: #555; line-height: 1.7;">
+                            "Troquei meu carro antigo por um seminovo na AutoElite e foi a melhor decisão. A avaliação do meu usado foi justa, 
+                            o processo foi transparente e rápido. Além disso, a garantia de 12 meses me deixou completamente tranquila."
+                        </p>
+                        <div style="display: flex; align-items: center; gap: 15px;">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover;">
+                            <div>
+                                <strong>Ana Paula Lima</strong><br>
+                                <span style="font-size: 12px; color: #999;">Comprou um Audi Q5 2022</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card" style="padding: 40px; border-left: 4px solid var(--secondary);">
+                        <div class="stars" style="color: var(--accent); margin-bottom: 15px; font-size: 18px;">★★★★★</div>
+                        <p style="font-size: 16px; font-style: italic; margin-bottom: 20px; color: #555; line-height: 1.7;">
+                            "Como primeira experiência comprando um carro zero, fui muito bem assessorado pela equipe da AutoElite. 
+                            Eles me explicaram todo o processo, ajudaram a escolher o melhor financiamento e ainda conseguiram um desconto extra. Excelente!"
+                        </p>
+                        <div style="display: flex; align-items: center; gap: 15px;">
+                            <img src="https://randomuser.me/api/portraits/men/22.jpg" style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover;">
+                            <div>
+                                <strong>Miguel Costa</strong><br>
+                                <span style="font-size: 12px; color: #999;">Comprou um Volvo XC60 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- 6. CONTATO -->
+    <div id="contact" class="page-section hidden fade-in">
+        <section class="section-padding">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <span class="section-subtitle">Entre em contato</span>
+                    <h2 class="section-title">Fale Conosco</h2>
+                    <p style="margin-bottom: 50px; color: var(--gray); max-width: 700px; margin-left: auto; margin-right: auto;">Estamos prontos para ajudar você a encontrar o carro ideal.</p>
+                </div>
+
+                <div class="contact-layout">
+                    <!-- Informações -->
+                    <div class="contact-info">
+                        <div class="info-box">
+                            <div class="info-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <div class="info-label">Endereço</div>
+                                <div class="info-content">
+                                    Av. das Nações, 1500 - Jardim Europa<br>
+                                    São Paulo - SP, CEP: 01478-000
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="info-box">
+                            <div class="info-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <div class="info-label">Telefone & WhatsApp</div>
+                                <div class="info-content">
+                                    (11) 3456-7890<br>
+                                    (11) 99999-1234 (WhatsApp)
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="info-box">
+                            <div class="info-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <div class="info-label">Horário de Funcionamento</div>
+                                <div class="info-content">
+                                    Segunda a Sexta: 09h às 19h<br>
+                                    Sábado: 09h às 16h<br>
+                                    Domingo: 10h às 14h
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="info-box">
+                            <div class="info-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <div class="info-label">E-mail</div>
+                                <div class="info-content">
+                                    contato@autoelite.com.br<br>
+                                    vendas@autoelite.com.br
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Mapa Estático -->
+                        <div style="background: var(--gray-light); height: 200px; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: var(--gray); margin-top: 30px;">
+                            <div style="text-align: center;">
+                                <i class="fas fa-map" style="font-size: 40px; margin-bottom: 10px; color: var(--primary);"></i><br>
+                                <strong>Localização no Mapa</strong><br>
+                                <small>Av. das Nações, 1500 - São Paulo/SP</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Formulário -->
+                    <div class="contact-form-wrapper">
+                        <div class="card" style="padding: 40px;">
+                            <h3 style="color: var(--primary); margin-bottom: 25px; font-size: 24px;">Solicitar Informações</h3>
+                            <form onsubmit="event.preventDefault(); alert('Solicitação enviada com sucesso! Entraremos em contato em até 2 horas úteis.');">
+                                <div class="form-group">
+                                    <label>Nome Completo*</label>
+                                    <input type="text" class="form-control" placeholder="Seu nome" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Telefone*</label>
+                                    <input type="tel" class="form-control" placeholder="(11) 99999-9999" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>E-mail*</label>
+                                    <input type="email" class="form-control" placeholder="seu@email.com" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Veículo de Interesse</label>
+                                    <select class="form-control">
+                                        <option>BMW X3 2024</option>
+                                        <option>Audi Q5 2022</option>
+                                        <option>Jeep Compass 2023</option>
+                                        <option>Volvo XC60 2024</option>
+                                        <option>Mercedes Classe C 2022</option>
+                                        <option>Outro modelo</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Tipo de Interesse</label>
+                                    <select class="form-control">
+                                        <option>Test Drive</option>
+                                        <option>Financiamento</option>
+                                        <option>Troca</option>
+                                        <option>Informações</option>
+                                        <option>Visita à Loja</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Mensagem*</label>
+                                    <textarea rows="4" class="form-control" placeholder="Descreva sua solicitação ou dúvida..." required></textarea>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary" style="width: 100%;">Enviar Solicitação</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <div class="footer-logo">AUTO<span>ELITE</span></div>
+                    <p class="footer-about">Concessionária premium especializada em veículos novos e seminovos das melhores marcas. Qualidade, transparência e atendimento diferenciado.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="footer-title">Navegação</h3>
+                    <div class="footer-nav">
+                        <a onclick="showPage('home')">Home</a>
+                        <a onclick="showPage('catalog')">Catálogo</a>
+                        <a onclick="showPage('financing')">Financiamento</a>
+                        <a onclick="showPage('about')">Sobre Nós</a>
+                        <a onclick="showPage('contact')">Contato</a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="footer-title">Serviços</h3>
+                    <div class="footer-nav">
+                        <a href="#">Venda de Veículos</a>
+                        <a href="#">Financiamento</a>
+                        <a href="#">Troca de Veículo</a>
+                        <a href="#">Test Drive</a>
+                        <a href="#">Pós-Venda</a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="footer-title">Newsletter</h3>
+                    <p class="footer-about">Receba nossas novidades, lançamentos e ofertas especiais diretamente no seu e-mail.</p>
+                    <div style="margin-top: 20px;">
+                        <input type="email" placeholder="Seu e-mail" style="width: 100%; padding: 12px; border-radius: 4px; border: none; margin-bottom: 10px;">
+                        <button class="btn btn-primary" style="width: 100%; padding: 12px; background: var(--secondary);">Inscrever-se</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                &copy; 2024 AutoElite Concessionária. Todos os direitos reservados. | Desenvolvido com ❤️ para amantes de carros
+            </div>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT (LÓGICA SPA + SIMULADOR) -->
+    <script src="script.js"></script>
+</body>
+</html>
