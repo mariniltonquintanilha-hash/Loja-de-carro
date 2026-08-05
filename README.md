@@ -1,137 +1,45 @@
-# Loja-de-carro
-Site de Loja de venda de carro
-AutoElite | Concessionária Premium
-📋 Descrição do Projeto
-Este projeto consiste em uma página web estática para a AutoElite, uma concessionária especializada em veículos premium. A aplicação foi desenvolvida com foco em uma experiência de usuário sofisticada, apresentando uma interface elegante e funcionalidades interativas.
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
-O código foi estruturado seguindo as melhores práticas de desenvolvimento front-end, com separação clara entre estrutura (HTML), estilo (CSS) e comportamento (JavaScript).
+# AutoElite — Concessionária Premium
 
-🚀 Funcionalidades Principais
-Navegação SPA (Single Page Application): Transições suaves entre seções sem recarregamento da página
+> Site de concessionária de veículos
 
-Simulador de Financiamento: Ferramenta interativa para cálculo de parcelas de financiamento veicular
+## 📌 Sobre o Projeto
 
-Design Responsivo: Adaptação perfeita para diferentes tamanhos de tela (desktop, tablet, mobile)
+Site modelo de concessionária de veículos com vitrine de automóveis, simulação de financiamento e contato para test drive.
 
-Catálogo de Veículos: Apresentação visual de modelos premium disponíveis
+## ✨ Funcionalidades
 
-Formulário de Contato: Interface para captação de leads e solicitações de informações
+- Vitrine de veículos em destaque
+- Simulação de financiamento
+- Seção sobre a concessionária
+- Contato e test drive
+- Design premium e responsivo
 
-🛠️ Tecnologias Utilizadas
-Tecnologia	Finalidade	Arquivo Principal
-HTML5	Estruturação do conteúdo, semântica e elementos da página	index.html
-CSS3	Estilização, layout responsivo, animações e efeitos visuais	style.css
-JavaScript (ES6+)	Interatividade, navegação SPA e simulador de financiamento	script.js
-📁 Estrutura do Projeto
-text
-AutoElite-Concessionaria/
-│
-├── index.html          # Página principal da aplicação
-├── style.css           # Estilos completos da aplicação
-├── script.js           # Lógica JavaScript e interatividade
-├── assets/             # (Opcional) Diretório para imagens e ícones
-│   ├── images/
-│   └── icons/
-└── README.md           # Documentação do projeto
-🖥️ Como Visualizar o Projeto
-Opção 1: Visualização Local
-Clone ou baixe este repositório
+## 🛠️ Tecnologias Utilizadas
 
-Navegue até a pasta do projeto
+| Tecnologia | Descrição |
+|------------|-----------|
+| **HTML5** | Estrutura semântica e acessível da página |
+| **CSS3** | Estilo visual, layout e responsividade |
+| **JavaScript** | Interatividade, manipulação do DOM e lógica do cliente |
 
-Abra o arquivo index.html em qualquer navegador web moderno
+## 🚀 Como Executar
 
-Opção 2: Servidor Local (Recomendado)
-Para uma experiência ideal, utilize um servidor local:
+1. Clone este repositório:
+   ```bash
+   git clone https://github.com/mariniltonquintanilha-hash/Loja-de-carro.git
+   ```
+2. Abra o arquivo `index.html` no navegador.
 
-Com Python:
+## 📁 Estrutura do Projeto
 
-bash
-python -m http.server 8000
-Acesse: http://localhost:8000
+```
+├── index.html    → Página principal
+├── style.css     → Estilos e responsividade
+└── script.js     → Interatividade e lógica
+```
 
-Com Node.js (serve package):
+## 📄 Licença
 
-bash
-npx serve .
-🎯 Funcionalidades Técnicas Detalhadas
-1. Sistema de Navegação SPA
-Navegação entre seções sem recarregamento de página
-
-Atualização da URL no histórico do navegador
-
-Rolagem suave para as seções
-
-2. Simulador de Financiamento
-Cálculo em tempo real de parcelas
-
-Interface intuitiva com sliders ou inputs
-
-Apresentação clara dos resultados
-
-3. Design Responsivo
-Breakpoints para diferentes dispositivos
-
-Layout flexível e adaptativo
-
-Otimização para mobile-first
-
-🔧 Requisitos do Navegador
-Navegador moderno com suporte a ES6+
-
-JavaScript habilitado
-
-Resolução mínima recomendada: 320px
-
-📱 Seções da Aplicação
-Header/Navegação: Menu principal com logo e links de navegação
-
-Hero/Banner: Apresentação visual impactante
-
-Destaques: Veículos em destaque
-
-Catálogo: Listagem completa de veículos premium
-
-Simulador: Ferramenta de cálculo de financiamento
-
-Sobre: Informações sobre a concessionária
-
-Contato: Formulário e informações de contato
-
-Footer: Rodapé com links e informações legais
-
-🎨 Diretrizes de Estilo
-Paleta de Cores: Tons premium e sofisticados
-
-Tipografia: Fontes elegantes e legíveis
-
-Espaçamento: Layout arejado e organizado
-
-Imagens: Veículos de alta qualidade
-
-🔄 Manutenção e Atualizações
-Para modificar o projeto:
-
-Conteúdo: Editar o arquivo index.html
-
-Estilos: Modificar o arquivo style.css
-
-Funcionalidades: Atualizar o arquivo script.js
-
-⚠️ Considerações Importantes
-Este é um projeto estático (front-end apenas)
-
-Não possui backend ou banco de dados integrado
-
-Para ambiente de produção, considere:
-
-Minificação dos arquivos
-
-Otimização de imagens
-
-Implementação de HTTPS
-
-Integração com serviço de formulários
-
-📄 Licença
-Este projeto foi desenvolvido para fins educacionais e demonstrativos.
+Projeto desenvolvido para fins de portfólio.
